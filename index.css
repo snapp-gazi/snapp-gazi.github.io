@@ -1,0 +1,45 @@
+/* ss */
+:root{
+      --bg-dark: #0d0d0d;
+      --card-dark: #1a1a1a;
+      --accent: #ff4d94;
+      --accent-light: #ff8fb2;
+      --text: #f5f5f5;
+      --muted: #b5b5b5;
+      --shadow: rgba(0,0,0,0.6);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Vazirmatn',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:var(--bg-dark);
+      color:var(--text);
+      line-height:1.6;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:56px;height:56px;object-fit:cover;border-radius:12px;background:var(--card-dark);padding:6px;box-shadow:0 0 10px var(--shadow)}
+    .brand h1{margin:0;font-size:20px;color:var(--accent)}
+    .nav-links{display:flex;gap:14px;align-items:center}
+    .nav-links a{padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--text);font-weight:600;transition:0.2s}
+    .nav-links a:hover{background:var(--card-dark)}
+    .nav-links a.cta{background:var(--accent);color:#fff;}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:40px 0}
+    .hero-card{background:var(--card-dark);border-radius:18px;padding:28px;box-shadow:0 6px 30px var(--shadow)}
+    .hero h2{margin:0 0 12px 0;font-size:30px;color:var(--accent)}
+    .hero p{margin:0 0 18px;color:var(--muted)}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700;transition:0.3s}
+    .btn.primary{background:var(--accent);color:white}
+    .btn.primary:hover{background:var(--accent-light)}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:24px}
+    .feature{background:var(--card-dark);border-radius:12px;padding:18px;box-shadow:0 6px 18px var(--shadow);text-align:center;transition:0.3s}
+    .feature:hover{transform:translateY(-5px)}
+    .feature h3{margin:0 0 8px;color:var(--accent)}
+    .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:18px}
+    .card{background:var(--card-dark);padding:16px;border-radius:14px;box-shadow:0 8px 24px var(--shadow);text-align:center;transition:0.3s}
+    .card:hover{transform:translateY(-5px)}
+    .avatar{width:120px;height:120px;border-radius:14px;object-fit:cover;margin:0 auto 12px;display:block;border:2px solid var(--accent)}
+    footer{margin-top:50px;padding:18px;text-align:center;color:var(--muted);border-top:1px solid #222}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
